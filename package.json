@@ -11,10 +11,10 @@
     "prod": "NODE_ENV=production npm-run-all build server",
     "clean": "rimraf dist",
     "transpile": "babel ./server --out-dir dist --copy-files",
-    "lint": "eslint ./server",
+    "lint": "eslint \"server/**/*.js\"",
     "test": "jest",
     "test:watch": "jest --watch",
-    "format": "prettier --write \"server/**/*.{js,jsx}\""
+    "format": "prettier --write \"server/**/*.js\""
   },
   "nodemonConfig": {
     "exec": "npm run dev",
